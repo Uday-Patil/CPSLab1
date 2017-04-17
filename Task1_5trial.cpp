@@ -16,7 +16,6 @@ int main()
 //	M3.stop();	
 	M3.set_position(0);
 	do {
-
 		
 		M3.set_position_sp(-30);
 		M3.set_duty_cycle_sp(50);
