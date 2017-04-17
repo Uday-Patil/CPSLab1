@@ -25,14 +25,14 @@ void driveOnCommand(){
 	do {
 		do {
 		
-		if(t1.is_pressed) {
-			waitForPressAndRelease();
-		}
+			if(t1.is_pressed) {
+				waitForPressAndRelease(); // Wait for press and release for the first time
+			}
 		
-		M1.run_direct();
-		M2.run_direct();
+			M1.run_direct();
+			M2.run_direct();
 		
-	} while(!t1.is_pressed);
+		} while(!t1.is_pressed);
 	
 	M1.stop();
 	M2.stop();
